@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".bottomnav.profile.ProfileFragment"
+    android:background="@color/white"
+    >
+
+    <ImageButton
+        android:id="@+id/logout_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/exit_svgrepo_com"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/profile_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/main" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/username_svg"
+        />
+
+    <TextView
+        android:fontFamily="@font/ubuntu_medium"
+        android:id="@+id/username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Profile"
+        android:textColor="@color/main"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_view" />
+
+
+    <LinearLayout
+        android:id="@+id/linner_email"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_tv">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="200dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Электронная почта"
+                android:textColor="@color/white"/>
+            <EditText
+                android:backgroundTint="@color/white"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email_et"
+                android:layout_marginStart="11dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Электронная почта"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_btn"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linner_number"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linner_email">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="150dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Номер телефона"
+                android:textColor="@color/white"/>
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:backgroundTint="@color/white"
+                android:hint="Ваш номер телефона"
+                android:inputType="phone"
+                app:mask="+7(###)###-##-##"
+                android:id="@+id/number_et"
+                android:layout_marginStart="11dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_btn2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_btn"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linner_passport"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linner_number">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="150dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Паспорт"
+                android:textColor="@color/white"/>
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:backgroundTint="@color/white"
+                android:inputType="number"
+                android:id="@+id/passport_et"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                app:mask="#### ######"
+                android:layout_marginStart="11dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ubuntu_medium"
+                android:hint="Ваш паспорт"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_btn3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_btn"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linner_snils"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linner_passport">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="150dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="СНИЛС"
+                android:textColor="@color/white"/>
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:backgroundTint="@color/white"
+                android:inputType="number"
+                app:mask="###-###-### ##"
+                android:hint="Ваш СНИЛС"
+                android:id="@+id/snils_et"
+                android:layout_marginStart="11dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_btn4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_btn"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linner_oms"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linner_snils">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="150dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Полис ОМС"
+                android:textColor="@color/white"/>
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:backgroundTint="@color/white"
+                android:inputType="number"
+                app:mask="################"
+                android:hint="Ваш полис ОМС"
+                android:id="@+id/oms_et"
+                android:layout_marginStart="11dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit_btn5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit_btn"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveUserInfo_btn"
+        android:textSize="16dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Сохранить данные"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linner_oms" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

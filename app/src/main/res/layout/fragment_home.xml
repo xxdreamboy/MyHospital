@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bottomnav.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp">
+
+
+
+
+            <TextView
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corners"
+                android:id="@+id/tvHospitalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Тольяттинская городская клиническая больница №5\nАдрес: г. Тольятти, бульвар Здоровья, 25\nТелефон: +7 (8482) 79-09-77\nРабочие часы: ПН-ПТ 7:30 - 19:00, СБ 8:00 - 16:00"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <androidx.viewpager2.widget.ViewPager2
+                android:background="@drawable/rounded_corners"
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corners"
+                android:id="@+id/tvDepartments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отделения:\n- Хирургическое\n- Терапевтическое\n- Педиатрическое\n- Неврологическое\n- Кардиологическое\n- Гинекологическое\n- Травматолого-ортопедическое\n- Нейрохирургическое\n- Отделение медицинской реабилитации\n"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="@font/ubuntu_medium"
+                android:id="@+id/tvNavigateToCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Перейти к записи"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

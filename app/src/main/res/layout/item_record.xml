@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rounded_corners"
+
+    android:padding="20dp">
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/doctorNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя врача"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:id="@+id/doctorSpecializationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Специализация врача" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/appointmentDateTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата и время" />
+</LinearLayout>
+
+
+
+
+

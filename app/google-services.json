@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "801051166232",
+    "project_id": "myhospital-9444c",
+    "storage_bucket": "myhospital-9444c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801051166232:android:4a8c52cdd34b88107be56d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoGaYIItep4JwTWIufESUnXgDuqKEfOMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

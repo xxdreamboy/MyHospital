@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinner_categories"
+
+        android:spinnerMode="dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner for selecting doctor -->
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinner_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView for displaying doctor's information -->
+    <TextView
+        android:id="@+id/tv_doctor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Информация о враче"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/ivDoctorPhoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doctor_svgrepo_com"/>
+
+    <!-- Button for selecting date and time -->
+    <Button
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/main"
+        android:id="@+id/btn_select_datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать дату и время"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Button for booking appointment -->
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_book_appointment"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/main"
+        android:layout_height="wrap_content"
+        android:text="Записаться на прием"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
+
